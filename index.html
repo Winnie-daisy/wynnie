@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winnie Daisy Aber | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Win<span>nie</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4>HELLO!</h4>
+            <h1>I'm <span>Winnie Daisy Aber</span></h1>
+            <h3>I am a <span class="changing-text"></span></h3>
+            <p>A passionate and creative fullstack engineer 
+                I’m a Software Developer passionate about building practical, real-world solutions.
+                I work with JavaScript and Python ecosystems, creating web and mobile applications.
+                I enjoy turning complex problems into simple, efficient systems.
+                I believe technology should create meaningful impact.</p>
+            <div class="btn-group">
+                <a href="contact.html" class="btn">Let's talk</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/winnie-daisy-aber-25bb67374/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/aber_daisy_wyn"><i class="fab fa-twitter"></i></a>
+                <a href="https://x.com/aber_daisy_wyn"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class="img-box">
+                <img src="img/IMG-20251101-WA0091.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About <span>Me</span></h2>
+        <div class="about-img">
+            <div class="img-box-small">
+                <img src="img/IMG-20251101-WA0091.jpg" alt="Profile Small">
+            </div>
+        </div>
+        <h3>Full-stack Web Developer</h3>
+        <p>I am a passionate Software Engineer with a strong foundation in building modern web applications using technologies like JavaScript, Node.js, Vue.js, and MongoDB. I enjoy turning ideas into practical, user-friendly solutions that solve real-world problems.
+
+        My journey into tech was driven by curiosity and a desire to create impact. During my training in Software Engineering and Learning for Action, I developed a deeper interest in using technology to address climate challenges. This inspired me to work on innovative solutions like the Climate Intelligence Benchmark, combining software development with sustainability.
+
+        I have hands-on experience developing full-stack applications, implementing CRUD functionalities, designing dashboards, and building responsive user interfaces. I am particularly interested in creating systems that improve efficiency, accessibility, and decision-making.
+
+        I am a continuous learner who thrives in dynamic environments, always exploring new technologies and improving my skills. I value clean code, collaboration, and building solutions that make a meaningful difference..</p><br>
+        <a href="#" class="btn">Hire Me</a>
+    </section>
+
+    <section id="services" class="upload-section">
+        <h2>Upload <span>Resume</span></h2>
+        <div class="skills-container">
+            <div class="skill-bar">
+                <div class="info"><span>HTML</span><span>90%</span></div>
+                <div class="line html"></div>
+            </div>
+            <div class="skill-bar">
+                <div class="info"><span>CSS</span><span>60%</span></div>
+                <div class="line css"></div>
+            </div>
+            <div class="skill-bar">
+                <div class="info"><span>JAVASCRIPT</span><span>85%</span></div>
+                <div class="line js"></div>
+            </div>
+        </div>
+
+        <div class="file-upload">
+            <input type="file" id="resume-file" hidden>
+            <label for="resume-file" class="file-label">Choose File</label>
+            <button class="btn upload-btn">Upload</button>
+        </div>
+    </section>
+    <section id="portfolio" class="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="project-grid">
+            <div class="project-card" data-title="Farm Management & Information System App" data-description="An offline-first Farm management and information system app for collecting data in the farm and management. This app helps farmers track crops, livestock, and operations efficiently without needing constant internet access." data-image="img/Gemini_Generated_Image_aji1woaji1woaji1.png" data-link="#" data-technologies="React Native, Django, SQLite, PostgreSQL" data-date="2025" data-role="Full-stack Developer">
+                <img src="img/Gemini_Generated_Image_aji1woaji1woaji1.png" alt="Project 1">
+                <div class="project-info">
+                    <h4>Farm Management & Information System App</h4>
+                    <p>An offline-first Farm management and information system app for collecting data in the farm and management .</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card" data-title="Rugyeyo Farm Ltd Website" data-description="A content Management website using strapi. Built with modern web technologies to provide an easy-to-use interface for managing farm-related content and information." data-image="img/Gemini_Generated_Image_gdjgdygdjgdygdjg.png" data-link="#" data-technologies="Strapi, React, Django" data-date="2025" data-role="Full-stack Developer">
+                <img src="img/Gemini_Generated_Image_gdjgdygdjgdygdjg.png" alt="Project 2">
+                <div class="project-info">
+                    <h4>Rugyeyo Farm Ltd Website</h4>
+                    <p>A content Management website using strapi.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card" data-title="Climate Intelligence Benchmark" data-description="A platform for climate change knowledge assessment, recommendation and feedback. Designed to educate users on climate issues and provide personalized recommendations based on their input." data-image="img/climate-benchmark.png" data-link="#" data-technologies="React, Node.js, Supabase" data-date="2026" data-role="Full-stack Developer">
+                <img src="img/climate-benchmark.png" alt="Project 3">
+                <div class="project-info">
+                    <h4>Climate Inteligence Benchmark</h4>
+                    <p>A platform for climate change knowledge assessment, recomendation and feedback.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Project Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="modal-details">
+                <p><strong>Technologies:</strong> <span id="modal-technologies"></span></p>
+                <p><strong>Year:</strong> <span id="modal-date"></span></p>
+                <p><strong>Role:</strong> <span id="modal-role"></span></p>
+            </div>
+            <a id="modal-link" href="#" target="_blank" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
