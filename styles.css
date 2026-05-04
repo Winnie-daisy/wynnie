@@ -114,29 +114,41 @@ nav ul li a:hover, .active { color: var(--main-color); }
     padding: 5rem 9%;
     text-align: center;
 }
-.skills-container { max-width: 600px; margin: 2rem auto; text-align: left; }
-.skill-bar { margin: 1rem 0; }
-.info { display: flex; justify-content: space-between; margin-bottom: 5px; }
-.line { height: 8px; width: 100%; background: #333; border-radius: 10px; position: relative; }
-.line::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    background: var(--main-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--main-color);
+.skills-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
-.html::after { width: 90%; }
-.css::after { width: 60%; }
-.js::after { width: 85%; }
-
-.file-upload { margin-top: 3rem; }
-.file-label {
-    background: #222;
-    padding: 0.8rem 2rem;
-    border: 1px solid #444;
-    border-radius: 5px;
-    cursor: pointer;
+.skill-category {
+    background: var(--second-bg-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+    text-align: left;
+    transition: 0.3s ease;
+}
+.skill-category:hover {
+    border-color: var(--main-color);
+    box-shadow: 0 0 15px rgba(255, 77, 5, 0.3);
+}
+.skill-category h4 {
+    color: var(--main-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+.skill-category p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.resume-button-container {
+    margin-top: 3rem;
+}
+.resume-button-container .btn {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
 }
 /* Projects Section Styling */
 .projects {

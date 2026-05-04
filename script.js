@@ -101,29 +101,6 @@ function initContactForm() {
     }
 }
 
-// Resume Upload Logic
-const fileInput = document.getElementById('resume-file');
-const uploadBtn = document.querySelector('.upload-btn');
-const fileLabel = document.querySelector('.file-label');
-
-if (fileInput && fileLabel) {
-    fileInput.addEventListener('change', function() {
-        if (this.files.length > 0) {
-            fileLabel.textContent = this.files[0].name; // Show file name on label
-        }
-    });
-}
-
-if (uploadBtn) {
-    uploadBtn.addEventListener('click', () => {
-        if (fileInput && fileInput.files.length > 0) {
-            alert("Success! Your resume '" + fileInput.files[0].name + "' has been uploaded (simulated).");
-        } else {
-            alert("Please select a file first.");
-        }
-    });
-}
-
 // Smooth Scroll for Navigation (only for same-page anchors)
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
